@@ -16,13 +16,13 @@ const Cliente = ({cliente}) => {
         <td className='p-6 flex gap-3 justify-center'>
             <button 
                 type='button'
-                className='text-blue-700 hover:brightness-150 uppercase font-medium text-xs text-center'
+                className='text-blue-700 hover:brightness-150 uppercase font-medium text-xs text-center hover:cursor-edit'
             >
                 Editar
             </button>
             <button
                 type='button'
-                className='text-red-700 hover:brightness-125 uppercase font-medium text-xs text-center'
+                className='text-red-700 hover:brightness-125 uppercase font-medium text-xs text-center hover:cursor-trash'
              >
                 Eliminar
             </button>
