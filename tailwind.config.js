@@ -12,7 +12,8 @@ export default {
         'clear':'#ECE8DD',
         'accent':'#4F4557',
         'white-alt':'#F8F4EA',
-        'red-p':'#EB455F'
+        'red-p':'#EB455F',
+        'red-ps':'#EB2D55'
       }
     },
   },
