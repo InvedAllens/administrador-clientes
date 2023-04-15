@@ -13,7 +13,7 @@ export default {
         'accent':'#4F4557',
         'white-alt':'#F8F4EA',
         'red-p':'#EB455F',
-        'red-ps':'#EB2D55'
+        'red-ps':'#EB2D5599'
       }
     },
   },
