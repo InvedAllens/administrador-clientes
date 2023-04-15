@@ -1,7 +1,8 @@
 import React from 'react'
-import { useNavigate, Form,useActionData } from 'react-router-dom'
+import { useNavigate, Form,useActionData, redirect } from 'react-router-dom'
 import Formulario from '../components/Formulario'
 import Error from '../components/Error'
+import { registrarCliente } from '../data/clientes'
 
 
 export async function action({request}){
@@ -19,9 +20,9 @@ export async function action({request}){
   }
   if(Object.keys(errores).length){
     return errores
-  }else{
-    return null
   }
+  await registrarCliente(datosForm)
+  return redirect('/')
   
 }
 const ClienteNuevo = () => {
@@ -35,7 +36,7 @@ const ClienteNuevo = () => {
       <p className='mt-3 text-center font-medium text-lg'>Llene todos los campos para registrar un nuevo cliente </p>
       <div>
         <button 
-          className='bg-main text-clear px-3 py-1 font-bold uppercase mt-2 mb-2'
+          className='bg-main text-clear px-3 py-1 font-bold uppercase mt-2 mb-2 hover:brightness-110'
           onClick={()=>navigate('/')}
         >
           Volver

@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       cursor:{
-        'edit':"url('./src/img/pen.svg'),auto",
-        'trash':"url('./src/img/trash.svg'),auto"
+        'edit':"url('/src/img/pen.svg'),auto",
+        'trash':"url('/src/img/trash.svg'),auto"
       },
       colors:{
         'main':'#579BB1',

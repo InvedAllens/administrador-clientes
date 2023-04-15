@@ -10,7 +10,7 @@ export async function loader(){
 }
 const Index = () => {
     const clientes=useLoaderData()
-    console.log(clientes)
+    //console.log(clientes)
   return (
     <>
        <h1 className='font-bold text-3xl text-gray-700'>Clientes</h1> 
